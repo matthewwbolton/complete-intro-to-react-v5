@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import useDropdown from "./useDropdown";
 
 const SearchParams = () => {
-  const [location, setLocation] = useState("Atlanta, GA");
+  const [location, setLocation] = useState("Seattle, WA");
 
   const [breeds, setBreeds] = useState([]);
 
