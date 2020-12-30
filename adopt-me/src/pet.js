@@ -7,7 +7,7 @@ const Pet = ({ name, animal, breed }) => {
   //     React.createElement("h2", {}, breed)
   //   ]);
 
-  return (
+    return (
     <div>
       <h1>{name}</h1>
       <h2>{animal}</h2>
