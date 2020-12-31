@@ -23,13 +23,15 @@ const App = () => {
   //   ]);
 
   return (
-    <div>
-      <h1 id="something important">Adopt Me!</h1>
-      {/* <Pet name="Luna" animal="Dog" breed="Havanese" />
+    <React.StrictMode>
+      <div>
+        <h1 id="something important">Adopt Me!</h1>
+        {/* <Pet name="Luna" animal="Dog" breed="Havanese" />
       <Pet name="Pepper" animal="Bird" breed="Cockatiel" />
       <Pet name="Doink" animal="Cat" breed="Mix" /> */}
-      <SearchParams />
-    </div>
+        <SearchParams />
+      </div>
+    </React.StrictMode>
   );
 };
 
