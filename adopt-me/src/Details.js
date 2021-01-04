@@ -1,9 +1,9 @@
 import React from "react";
 import Pet from "@frontendmasters/pet";
+import { navigate } from "@reach/router";
 import Carousel from "./Carousel";
 import ErrorBoundary from "./ErrorBoundary";
 import ThemeContext from "./ThemeContext";
-import { navigate } from "@reach/router";
 import Modal from "./Modal";
 class Details extends React.Component {
   state = {
@@ -45,7 +45,6 @@ class Details extends React.Component {
       description,
       media,
       name,
-      url,
       showModal
     } = this.state;
 
@@ -72,7 +71,9 @@ class Details extends React.Component {
                 <h1>Would you like to adopt {name}?</h1>
                 <div className="buttons">
                   <button onClick={this.adopt}>Yes</button>
-                  <button onClick={this.toggleModal}>No</button>
+                  <button onClick={this.toggleModal}>
+                    No, I am a monster!
+                  </button>
                 </div>
               </div>
             </Modal>
