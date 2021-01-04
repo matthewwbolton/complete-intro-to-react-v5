@@ -86,12 +86,12 @@ const SearchParams = () => {
         </label> */}
         <AnimalDropdown />
         <BreedDropdown />
-        <label htmlFor="location">
+        <label htmlFor="theme">
           Theme
           <select
             value={theme}
             onChange={e => setTheme(e.target.value)}
-            onBlur={e => setTheme(e.targe.value)}
+            onBlur={e => setTheme(e.target.value)}
           >
             <option value="peru">Peru</option>
             <option value="darkblue">Dark Blue</option>

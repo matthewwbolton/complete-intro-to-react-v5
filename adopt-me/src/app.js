@@ -6,7 +6,7 @@ import Details from "./Details";
 import ThemeContext from "./ThemeContext";
 
 const App = () => {
-  const theme = useState("darkblue");
+  const themeHook = useState("darkblue");
 
   //   return React.createElement("div", {}, [
   //     React.createElement("h1", {}, "Adopt Me!"),
@@ -29,7 +29,7 @@ const App = () => {
 
   return (
     <React.StrictMode>
-      <ThemeContext.Provider value={theme}>
+      <ThemeContext.Provider value={themeHook}>
         <div>
           <header>
             <Link to="/" id="something-important">
