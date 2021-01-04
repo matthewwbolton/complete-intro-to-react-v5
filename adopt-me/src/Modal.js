@@ -6,8 +6,9 @@ const modalRoot = document.getElementById("modal");
 const Modal = ({ children }) => {
   const elRef = useRef(null);
 
-  if (elRef.current) {
-    elRef.current = document.createElement("div");
+  if (!elRef.current) {
+    const div = document.createElement("div");
+    elRef.current = div;
   }
 
   useEffect(() => {
